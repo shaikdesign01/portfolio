@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    border:0;
+    padding:0;
+    font-size:100%;
+    outline:0;
+    vertical-align: baseline;
+}
+:root{
+    --main-black:#1f202b;
+    --main-gray: #8a8ca5;
+    --light-gray: #e7e7e8;
+    --main-blue: #5952ff;
+}
+html{
+    font-family: 'Dubai', sans-serif;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+h1{
+    font-size:3.1em;
+    font-weight:900;
+    color: var(--main-black);
+    line-height: 1.45em;
+    text-transform: uppercase;
+}
+h2{
+    font-size:1.5em;
+    font-weight:500;
+    color: var(--main-black);
+}
+h5{
+    font-size:1.2em;
+    color: var(--main-black);
+}
+p{
+    font-size:17px;
+    color: var(--main-gray);
+}
+a{
+    font-size:17px;
+    text-decoration: none;
+    color: var(--main-gray);
+}
+.wrapper-content{
+    width:980px;
+    margin:0 auto;
+}
+.white{
+    color:white;
+}
+.r{
+    text-align: right;
+    /* margin-right: 300px; */
+    margin-bottom: 530px;
+}
+.l{
+    padding-left: 200px;
+}
+
+/* Nav */
+nav{
+    position: fixed;
+    top:50px;
+    left:5%;
+    line-height: 50px;
+    width:100%;
+    z-index: 10;
+}
+nav a{
+    font-weight: 500;
+    color: var(--main-black);
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+.nav-right{
+    position: fixed;
+    right:5%;
+    top:50px;
+}
+.nav-right a > img.work{
+   width:20px;
+   vertical-align: sub;
+}
+.nav-right a:first-child{
+    color:var(--main-blue);
+    margin-right: 60px; 
+}
+.rec{
+    background: var(--main-blue);
+    display: inline-block;
+    width:7px;
+    height:14px;
+    margin-right:3px;
+}
+
+/* Content */
+.landing, .section2{
+    margin-top:150px;
+    display: flex;
+}
+.left{
+    flex: 1;
+    margin-top: 110px;
+    position: relative;
+}
+.right{
+    flex:1;
+    position: relative;
+}
+.right p{
+    max-width: 400px;
+
+}
+.left p{
+    max-width: 400px;
+}
+.skills{
+    float: right;
+}
+.skill-box{
+    background: white;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    width:350px;
+    height:90px;
+    line-height: 90px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(75,79,124,0.1);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(75,79,124,0.1);
+    box-shadow: 0px 5px 20px 0px rgba(75,79,124,0.1);
+}
+.rec-large{
+    background-color: var(--main-blue);
+    height:150px;
+    width:620px;
+    position: absolute;
+    top:-45px;
+    left:-80px;
+    z-index: -1;
+}
+.line{
+    height: 3px;
+    width:120px;
+    background: var(--main-black);
+    position: absolute;
+    top:30px;
+    left:-140px;
+}
+
+.line2{
+    height: 3px;
+    width:120px;
+    background: var(--main-black);
+    position: absolute;
+    top:30px;
+    left:60px;
+}
+.section2{
+    margin-top:700px;
+
+}
+.rec-large-2{
+    background: var(--main-blue);
+    height:260px;
+    width:900px;
+    position: absolute;
+    top:-142px;
+    left:-472px;
+    z-index:-1;
+}
+.summary-list li{
+    margin-left: 15px;
+    color: var(--main-gray);
+}
+.language-list li{ 
+    display: inline-block;
+    margin-left: 0px;
+    color: var(--main-gray);
+}
+
+.arrow{
+    position: absolute;
+    right:5px;
+    top:-140px;
+}
+
+/*background lines*/
+.lines{
+    display: block;
+    width:1px;
+    height:100vh;
+    background-color: var(--light-gray);
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index:-2;
+}
+.right-line-1{
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+}
+.right-line-2{
+    transform: translateX(600px);
+    -webkit-transform: translateX(600px);
+}
+.right-line-3{
+    transform: translateX(900px);
+    -webkit-transform: translateX(900px);
+}
+.left-line-1{
+    transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+}
+.left-line-2{
+    transform: translateX(-600px);
+    -webkit-transform: translateX(-600px);
+}
+.left-line-3{
+    transform: translateX(-900px);
+    -webkit-transform: translateX(-900px);
+}
+
+/*footer*/
+footer{
+    position: fixed;
+    bottom: 50px;
+    right: 5%;
+}
+.social{
+    position: fixed;
+    left:5%;
+}
+.social > a{
+    margin-right:60px;
+}
+footer > p, .social >a{
+    font-weight: 500px;
+}
+
+/*Motion*/
+.delay-1{
+    animation-delay: 0.1s;
+}
+.delay-2{
+    animation-delay: 0.3s;
+}
+.delay-3{
+    animation-delay: 0.5s;
+}
+.delay-4{
+    animation-delay: 0.7s;
+}
